@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="hero-container">
+            <h2 class="city-state"></h2>
+            <div class="weather-container">
+            </div>
+            <div class="search-container">
+                <label for="city-location">City: </label>
+                <input type="text" id="city-location">
+                <button class="get-data">GET WEATHER INFO</button>
+            </div>
+        </div>
+        <div class="details-container">
+            <div class="detail">
+                <p class="detail-name">Humidity</p>
+                <p class="detail-attribute humidity"></p>
+            </div>
+            <div class="detail">
+                <p class="detail-name">Feels Like</p>
+                <p class="detail-attribute feels-like"></p>
+            </div>
+            <div class="detail">
+                <p class="detail-name">Visibility</p>
+                <p class="detail-attribute visibility"></p>
+            </div>
+            <div class="detail">
+                <p class="detail-name">Wind Speed</p>
+                <p class="detail-attribute wind-speed"></p>
+            </div>
+        </div>
+        <div class="gif-container">
+            <span class="gif-error hidden">GIF DID NOT LOAD CORRECTLY</span>
+        </div>
+    </div>
+    <div class="loading-overlay hidden">
+        <img src="./images/loading.gif" class="loading">
+        <h2 class="loading-text">SEARCHING WEATHER DATA...</h2>
+    </div>
+    
+</body>
+</html>

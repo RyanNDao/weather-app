@@ -1,0 +1,140 @@
+body {
+    background-image: url(./images/weather.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container{
+    background-color: rgba(255, 255, 255, 0.863);
+    height: 100%;
+    width: 50%;
+    box-shadow: 4px 4px 6px black;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.hidden{
+    display: none;
+}
+
+.loading-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.397);
+    backdrop-filter: blur(20px);
+}
+
+.loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-text{
+    position: fixed;
+    font-size: 3rem;
+    color: white;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-container{
+    background-image: url('./images/sunny.jpg');
+    background-size: 100% 100%;
+    opacity: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.city-state{
+    text-align: center;
+    color: black;
+    margin-bottom: 0;
+}
+
+.hero-container, .details-container, .gif-container{
+    border: 2px solid black;
+}
+
+.weather-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.temp{
+    font-size: 6.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+div.condition{
+    font-size: 4.25rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.detail{
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail > p{
+    margin: 5px;
+}
+
+.detail-name{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.detail-attribute{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.gif-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: auto 100%;
+}
+
+.gif-error{
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
