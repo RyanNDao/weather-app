@@ -11,3 +11,4 @@ This project is a weather app that uses asynchronous calls to get live data from
 ## Features
 - User can search for a city and the app displays the weather data for that location 
 - Includes a fun gif at the bottom of the page that represents the weather
+- Displays a loading screen when the weather API is called to prevent the user from interacting with the page
